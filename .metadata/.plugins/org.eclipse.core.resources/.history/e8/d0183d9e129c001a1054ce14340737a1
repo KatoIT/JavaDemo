@@ -1,0 +1,16 @@
+package Sort_Algorithm.My_Application;
+
+import Sort_Algorithm.MinPQ;
+
+public class List_Student {
+
+	private MinPQ<Student> pq;
+	
+	public List_Student() {
+		pq = new MinPQ<Student>((s1,s2) ->{
+			String str1[] = s1.getName().split("\\s");
+			String str2[] = s2.getName().split("\\s");
+			return str1[str1.length-1].compareTo(str2[str2.length - 1]);
+		});
+	}
+}

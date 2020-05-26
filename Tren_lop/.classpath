@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Kỳ IV/Thuật Toán/AAPTTKTT_2020_SV/Code/algs4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Kỳ IV/Thuật Toán/AAPTTKTT_2020_SV/Code/algs4-data.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Kỳ IV/Thuật Toán/AAPTTKTT_2020_SV/Code/stdlib.jar"/>
+	<classpathentry kind="lib" path="D:/MySQL/mysql-connector-java-8.0.20.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

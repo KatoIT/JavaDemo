@@ -1,0 +1,3 @@
+1587313575298	Extract method 'readData'
+1587624281636	Extract method 'readData'
+1587626275415	Convert local variable 'matrix' to field

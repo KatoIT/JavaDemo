@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Straight_Line.java&apos; to &apos;Tuan_8.Straight_Line.java&apos;&#x0D;&#x0A;- Original project: &apos;Tren_lop&apos;&#x0D;&#x0A;- Destination element: &apos;Tuan_8.Straight_Line.java&apos;&#x0D;&#x0A;- Original element: &apos;Tuan_8.Straight_Line.java&apos;" description="Copy compilation unit" destination="/src&lt;Tuan_8{Straight_Line.java" element1="/src&lt;Tuan_8{Straight_Line.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1587956370685" units="1" version="1.0"/>
+</session>

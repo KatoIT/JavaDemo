@@ -1,0 +1,144 @@
+package Sort_Algorithm.My_Application;
+
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Scanner;
+
+public class SimbolTableStudent {
+
+		public static Scanner scanner = new Scanner(System.in);
+		private SymbolTable<String, Student> st;
+
+		// Construct
+		public SimbolTableStudent() {
+			st = new SymbolTable<String, Student>();
+		}
+
+		
+		
+		// read file data
+		 @SuppressWarnings("null")
+		public void readData(String fileName) {
+		        // Step 1 - File
+		        File file = new File(fileName);
+		        FileReader fr = null;
+		        BufferedReader br = null;
+		        try {
+		            // Step 2: Make a file reader
+		            fr = new FileReader(file);
+		            
+		            // Step 3: Make a buffer to read data
+		            br = new BufferedReader(fr);
+		            
+		            // Step 4: Read data from buffer to variable
+		            String data;
+		           while ( (data= br.readLine()) != null ) {
+		        	 String[] element = data.split(";") , details = null;
+		        	 for(String e : element) {    		
+		        		
+		        		 details = e.split(",");
+		        	 }
+		        	 
+		           }
+		           
+		        } catch (FileNotFoundException e) {
+		            e.printStackTrace();
+		        } catch (IOException e){
+		            e.printStackTrace();
+		        } finally{
+		            // Step 6: Close all connections
+		            try {
+		                br.close();
+		                fr.close();
+		            } catch (IOException e) {
+		                e.printStackTrace();
+		            }
+		        }
+		    }
+
+		// nhap vao thong tin sinh vien
+		public void Add() {
+//			System.out.println("Nhap vao thong tin sinh vien : ");
+//			int ID = inputID();
+//			String Name = inputName();
+//			int Age = inputAge();
+//			String Address = inputAddress();
+//			double Gpa = inputGpa();
+			Student student1 = new Student(1, "Nam", 15, "Hanoi", 20);
+			Student student2 = new Student(2, "An", 16, "Hanoi", 21);
+			Student student3 = new Student(3, "Manh",17, "Hanoi", 23);
+			Student student4 = new Student(4, "Duy", 18, "Hanoi", 25);
+			st.put(student1.getId(), student1);
+			st.put(student2.getId(), student2);
+			st.put(student3.getId(), student3);
+			st.put(student4.getId(), student4);
+
+		}
+
+		public void Show() {
+			for (Integer s : st.keys()) {
+				System.out.println(st.get(s));
+			}
+		}
+
+		public void Edit(int id) {
+			System.out.println("Nhap vao thong tin sinh vien can chinh sua : ");
+			int ID = inputID();
+			String Name = inputName();
+			int Age = inputAge();
+			String Address = inputAddress();
+			double Gpa = inputGpa();
+			Student student = new Student(ID, Name, Age, Address, Gpa);
+			st.put(student.getId(), student);
+		}
+
+		public void Delete(int id) {
+			st.delete(id);
+		}
+
+		public void ShowSortedById() {
+
+			ArrayList<Integer> List = new ArrayList<Integer>() ; 
+			for (Integer s : st.keys()) {
+				 List.add(s);
+			}
+			 Collections.sort(List, new Comparator<Integer>() {
+
+			        @Override
+			        public int compare(Integer obj1, Integer obj2) {
+			            return obj2.compareTo(obj1);
+			        }
+			    });
+			 for(Integer s:List) {
+				 System.out.println(st.get(s));
+			 }
+		}
+		public void ShowSortByName() {
+			ArrayList<String>  List = new ArrayList<String>();
+			for(Integer s : st.keys()) {
+				List.add(st.get(s).getName());
+			}
+			Collections.sort(List, new Comparator<String>() {
+
+		        @Override
+		        public int compare(String obj1, String obj2) {
+		            return obj1.compareTo(obj2);
+		        }
+		    });
+		 for(String name : List) {
+			 for(Integer s : st.keys()) {
+				 if(st.get(s).getName()== name) {
+					 System.out.println(st.get(s));
+				 }
+			 }
+		 }
+		}
+	
+}

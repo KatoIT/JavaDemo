@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;HDH.FIFO&apos; to &apos;lapLichCPU&apos;&#x0D;&#x0A;- Original project: &apos;Calculator&apos;&#x0D;&#x0A;- Original element: &apos;HDH.FIFO&apos;&#x0D;&#x0A;- Renamed element: &apos;HDH.lapLichCPU&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FIFO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;HDH{FIFO.java[FIFO" matchStrategy="1" name="lapLichCPU" qualified="false" references="true" similarDeclarations="true" stamp="1588343784836" textual="false" version="1.0"/>
+</session>

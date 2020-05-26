@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;tinyT.txt&apos; to &apos;Tren_lop&apos;&#x0D;&#x0A;- Original project: &apos;Tren_lop&apos;&#x0D;&#x0A;- Destination element: &apos;Tren_lop&apos;&#x0D;&#x0A;- Original element: &apos;tinyT.txt&apos;" description="Copy file" element1="src/Tuan_12/tinyT.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1589943764633" target="/Tren_lop" units="0" version="1.0"/>
+</session>
