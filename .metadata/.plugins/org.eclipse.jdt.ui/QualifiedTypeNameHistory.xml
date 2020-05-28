@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
-<fullyQualifiedTypeName name="SDKFrame.Node"/>
 <fullyQualifiedTypeName name="SDKFrame.Game"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.impl.orbutil.graph.Node"/>
 <fullyQualifiedTypeName name="javafx.scene.image.Image"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="Sort_Algorithm.My_Application.Student"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="View.GamePanelCpn"/>
 </qualifiedTypeNameHistroy>
